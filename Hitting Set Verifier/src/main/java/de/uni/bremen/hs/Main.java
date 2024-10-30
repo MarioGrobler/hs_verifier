@@ -10,7 +10,7 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) throws IOException {
         if(args.length != 2) {
-            System.err.println("Two arguments expected. Usage: ds_verifier [Path to graph] [Path to solution]");
+            System.err.println("Two arguments expected. Usage: hs_verifier [Path to graph] [Path to solution]");
         }
 
         Importer importer = new Importer();
