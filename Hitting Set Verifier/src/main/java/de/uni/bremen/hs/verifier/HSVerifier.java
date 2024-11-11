@@ -11,7 +11,7 @@ public class HSVerifier {
     public boolean verify(final HyperGraph hyperGraph, final Solution solution) {
         if(!solution.isConsistent()) {
             throw new VerificationException("Solution is not consistent. Specified solution size: " +
-                    solution.getSolutionSize() + ", actual solution size: " + solution.getSolution().size());
+                    solution.getSolutionSize() + ", given solution size: " + solution.getSolution().size());
         }
 
         Set<HyperEdge> hit = new HashSet<>();

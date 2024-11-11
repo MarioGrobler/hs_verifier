@@ -21,7 +21,7 @@ public class Main {
         if(verifier.verify(hyperGraph, solution)) {
             System.out.println("Solution of size " + solution.getSolutionSize() + " is valid!");
         } else {
-            System.err.println("At least one hyperedge is not hit!");
+            System.err.println("At least one hyperedge is not hit by the given solution!");
         }
     }
 }
