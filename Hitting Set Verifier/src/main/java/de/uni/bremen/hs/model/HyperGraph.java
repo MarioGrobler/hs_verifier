@@ -87,4 +87,8 @@ public class HyperGraph {
     public int countHyperEdges() {
         return hyperEdgeSet.size();
     }
+
+    public Collection<HyperEdge> getHyperEdges() {
+        return hyperEdgeSet;
+    }
 }

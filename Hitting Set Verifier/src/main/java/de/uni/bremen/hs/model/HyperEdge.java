@@ -11,11 +11,11 @@ public class HyperEdge {
         this.vertices = vertices;
     }
 
-    protected Set<Integer> getVertices() {
+    public Set<Integer> getVertices() {
         return vertices;
     }
 
-    protected boolean isEmpty() {
+    public boolean isEmpty() {
         return vertices.isEmpty();
     }
 

@@ -9,7 +9,8 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        if(args.length != 2) {
+
+        if (args.length != 2) {
             System.err.println("Two arguments expected. Usage: hs_verifier [Path to graph] [Path to solution]");
         }
 
@@ -18,7 +19,7 @@ public class Main {
         Solution solution = importer.readSolution(args[1]);
 
         HSVerifier verifier = new HSVerifier();
-        if(verifier.verify(hyperGraph, solution)) {
+        if (verifier.verify(hyperGraph, solution)) {
             System.out.println("Solution of size " + solution.getSolutionSize() + " is valid!");
         } else {
             System.err.println("At least one hyperedge is not hit by the given solution!");
