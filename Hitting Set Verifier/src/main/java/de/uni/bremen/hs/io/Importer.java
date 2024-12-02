@@ -29,7 +29,7 @@ public class Importer {
             }
 
             if (line.startsWith("p")) {
-                if (!strings[1].equals("hs")) {
+                if (strings.length < 2 || !strings[1].equals("hs")) {
                     throw new IOException("Problem specifier is not hs in line " + i);
                 }
                 continue;
